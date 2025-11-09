@@ -1,0 +1,29 @@
+# Pandoc temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.xdv
+*.nav
+*.snm
+*.vrb
+
+# Compiled PDFs
+*.pdf
+
+# Bibliography auxiliary files (if using biber/bibtex)
+*.bcf
+*.run.xml
+
+# Pandoc cache / temp files (optional)
+*.tmp
+*.pandoc
+
+# OS files (optional but recommended)
+.DS_Store
+Thumbs.db
