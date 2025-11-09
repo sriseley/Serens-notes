@@ -27,3 +27,6 @@
 # OS files (optional but recommended)
 .DS_Store
 Thumbs.db
+
+# Style files
+*.csl
