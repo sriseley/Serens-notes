@@ -1,5 +1,4 @@
-## Building notes
-
+## Setup
 
 Install dependencies from system package manager:
 
@@ -10,29 +9,26 @@ sudo dnf install pdflatex pandoc texlive-latex-recommended
 Get style files:
 
 ```
+cd Serens-notes
 wget https://www.zotero.org/styles/ieee -O ieee.csl
 wget https://www.zotero.org/styles/apa -O apa.csl
 ```
 
-Compile:
+## Compiling notes 
+
+Compile a note to PDF:
 
 ```
+cd <note folder>
 ./compile.sh
 ```
 
-## Troubleshooting
+## Validating references
 
-To validate a references file:
-
-```
-biber --tool --validate-datamodel references.bib
-```
-
-or
+Validate references after adding references from citation data:
 
 ```
-pandoc --metadata-file=references.bib 
+./validate-references.sh
 ```
-
 
 
